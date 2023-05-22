@@ -62,6 +62,7 @@
 
   --bg: var(--dkgray);
   --text-lt: var(--ltpurple);
+  --text-md: var(--dkpurple);
   --text-dk: var(--black);
 
   --nav-bg: var(--dkpurple);
@@ -170,11 +171,25 @@ img {
 }
 
 .color-box {
-  padding: 0px 30px 20px;
+  padding: 20px 30px;
+}
+
+.color-box h1 {
+  padding-left: 0px;
+}
+
+.color-box h2 {
+  color: var(--text-lt);
+  margin-bottom: 0px;
+}
+
+.color-box small {
+  color: var(--text-md);
+  font-size: 14pt;
 }
 
 .color-box p {
-  color: var(--text-dk);
+  color: var(--text-lt);
 }
 
 .color-box-primary {
@@ -183,6 +198,14 @@ img {
 
 .color-box-secondary {
   background-color: var(--color-box-secondary);
+}
+
+.color-box-ternary {
+  background-color: var(--color-box-ternary);
+}
+
+footer {
+  margin-top: 100px;
 }
 
 footer .navbar {
@@ -208,6 +231,54 @@ footer .navbar-nav a:hover {
 
 .homepage h1 {
   font-size: 40pt;
+}
+
+.homepage .color-box {
+  padding: 0px 30px 20px;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links h2 {
+  text-align: left;
+}
+
+.links .color-box-primary {
+  background-color: var(--button-bg-primary);
+}
+
+.links .color-box-primary:hover {
+  background-color: var(--button-bg-hover-primary);
+}
+
+.links .color-box-primary:active {
+  background-color: var(--button-bg-active-primary);
+}
+
+.links .color-box-secondary {
+  background-color: var(--button-bg-secondary);
+}
+
+.links .color-box-secondary:hover {
+  background-color: var(--button-bg-hover-secondary);
+}
+
+.links .color-box-secondary:active {
+  background-color: var(--button-bg-active-secondary);
+}
+
+.links .color-box-ternary {
+  background-color: var(--button-bg-ternary);
+}
+
+.links .color-box-ternary:hover {
+  background-color: var(--button-bg-hover-ternary);
+}
+
+.links .color-box-ternary:active {
+  background-color: var(--button-bg-active-ternary);
 }
 
 .navbar {
