@@ -1,0 +1,276 @@
+/* ===== Color theme- ===== */
+:root {
+  --ltgray: #454851;
+  --ltred: #BD6B73;
+  --ltblue: #759FBC;
+  --ltgreen: #95D7AE;
+  --ltpurple: #FCEFF9;
+  --dkgray: #202225;
+  --dkred: #662E33;
+  --dkblue: #415665;
+  --dkgreen: #497158;
+  --dkpurple: #BAA9B6;
+  --black: #000000;
+  --trnred25: #BD6B7340;
+  --trnblue25: #759FBC40;
+  --trngreen25: #95D7AE40;
+  --trnred50: #BD6B7380;
+  --trnblue50: #759FBC80;
+  --trngreen50: #95D7AE80;
+  --trnred75: #BD6B73BF;
+  --trnblue75: #759FBCBF;
+  --trngreen75: #95D7AEBF;
+  --trndkred75: #662E33BF;
+  --trndkblue75: #415665BF;
+  --trndkgreen75: #497158BF;
+}
+
+/* ===== Project color definitions ===== */
+:root {
+
+  --primary: var(--ltgreen);
+  --secondary: var(--ltblue);
+  --ternary: var(--ltred);
+
+  --border-primary: var(--dkgreen);
+  --border-secondary: var(--dkblue);
+  --border-ternary: var(--dkred);
+
+  --bg-primary: var(--trngreen50);
+  --bg-secondary: var(--trnblue50);
+  --bg-ternary: var(--trnred50);
+
+  --button-bg-primary: var(--trngreen25);
+  --button-bg-secondary: var(--trnblue25);
+  --button-bg-ternary: var(--trnred25);
+
+  --button-bg-hover-primary: var(--trngreen50);
+  --button-bg-hover-secondary: var(--trnblue50);
+  --button-bg-hover-ternary: var(--trnred50);
+
+  --color-box-primary: var(--trngreen50);
+  --color-box-secondary: var(--trnblue50);
+  --color-box-ternary: var(--trnred50);
+
+  --button-bg-active-primary: var(--trngreen75);
+  --button-bg-active-secondary: var(--trnblue75);
+  --button-bg-active-ternary: var(--trnred75);
+
+  --tile-banner-primary: var(--trndkgreen75);
+  --tile-banner-secondary: var(--trndkblue75);
+  --tile-banner-ternary: var(--trndkred75);
+
+  --bg: var(--dkgray);
+  --text-lt: var(--ltpurple);
+  --text-dk: var(--black);
+
+  --nav-bg: var(--dkpurple);
+  --nav-bg-active: var(--ltpurple);
+  --nav-text: var(--dkred);
+  --nav-text-active: var(--ltred);
+
+  --footer-bg: var(--trnred50);
+  --footer-text: var(--ltpurple);
+  --footer-text-active: var(--dkpurple);
+
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-lt);
+  font-size: 14pt;
+}
+
+h1 {
+  color: var(--primary);
+  padding: 20pt;
+}
+
+h2 {
+  color: var(--text-lt);
+  padding-bottom: 10pt;
+  text-align: center;
+}
+
+p {
+  color: var(--text-lt);
+}
+
+a {
+  color: var(--primary);
+}
+
+a:visited {
+  color: var(--secondary);
+}
+
+footer {
+  background-color: var(--footer-bg);
+}
+
+footer a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.below-menu {
+  margin-top: 90px;
+}
+
+.button {
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  padding-left: 20pt;
+  padding-right: 20pt;
+  border-style: solid;
+  border-width: 3pt;
+  border-radius: 5pt;
+  display: inline-block;
+}
+
+.button a {
+  text-decoration: none;
+  color: var(--text-lt);
+}
+
+.button-primary {
+  background-color: var(--button-bg-primary);
+  text-align: center;
+  font-size: 18pt;
+  border-color: var(--border-primary);
+  border-width: 2pt;
+}
+
+.button-primary:hover {
+  background-color: var(--button-bg-hover-primary);
+}
+
+.button-primary:active {
+  background-color: var(--button-bg-active-primary);
+}
+
+.button-secondary {
+  background-color: var(--button-bg-secondary);
+  text-align: center;
+  font-size: 14pt;
+  border-color: var(--border-secondary);
+  border-width: 2pt;
+}
+
+.button-secondary:hover {
+  background-color: var(--button-bg-hover-secondary);
+}
+
+.button-secondary:active {
+  background-color: var(--button-bg-active-secondary);
+}
+
+.color-box {
+  padding: 0px 30px 20px;
+}
+
+.color-box p {
+  color: var(--text-dk);
+}
+
+.color-box-primary {
+  background-color: var(--color-box-primary);
+}
+
+.color-box-secondary {
+  background-color: var(--color-box-secondary);
+}
+
+footer .navbar {
+  background-color: var(--footer-bg);
+}
+
+footer .navbar-nav a {
+  color: var(--footer-text);
+}
+
+footer .navbar-nav a:hover {
+  color: var(--footer-text-active);
+}
+
+.go-back, .go-back:visited {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.homepage p {
+  font-size: 18pt;
+}
+
+.homepage h1 {
+  font-size: 40pt;
+}
+
+.navbar {
+  background-color: var(--nav-bg);
+  font-size: 24px;
+}
+
+.navbar-nav li {
+  padding: 0px 50px;
+}
+
+.navbar-nav a {
+  color: var(--nav-text);
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav .active {
+  background-color: var(--nav-bg-active);
+}
+
+.navbar-nav .active a {
+  color: var(--nav-text-active);
+}
+
+.offset-color-box {
+  background-color: black;
+  box-shadow: -60px 30px 0px var(--bg-primary);
+}
+
+.tile {
+  position: relative;
+  text-align: center;
+  color: var(--text-lt);
+  padding: 0px 10px;
+}
+
+.tile a {
+  text-decoration: none;
+}
+
+.tile p {
+  height: 40px;
+  bottom: 40px;
+  background-color: var(--tile-banner-secondary);
+}
+
+.tile .box-container {
+  position: relative;
+  height: 40px;
+  bottom: 40px;
+  background: transparent;
+  display: flex;
+}
+
+.tile .box {
+  background: transparent;
+  flex: 0.7;
+  transition: 1s;
+}
+
+#main-title {
+  font-size: 60pt;
+}
